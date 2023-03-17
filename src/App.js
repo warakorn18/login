@@ -3,13 +3,6 @@
 import './App.css';
 import L_fron from './L_fron/fron_login';
 
-
-
-
-
-
-
-
 function App() {
   return (
 
@@ -30,7 +23,6 @@ function App() {
     //   </header>
     // </div>
     <L_fron/>
-    
 
   );
 }

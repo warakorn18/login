@@ -1,6 +1,8 @@
 import'./L_fron.css';
 import {React, useState} from 'react';
 // import { useId } from 'react';
+import tabV2 from './tabV2';
+
 
 
 
@@ -8,39 +10,37 @@ import {React, useState} from 'react';
 // const username=document.getElementById('username');
 //  const password=document.getElementById('password');
 
-const L_fron =()=>{
-    
+const L_fron =(porps)=>{
     const [title,settitle]= useState('')
-    const [amount,setamount] =useState('')
-    const inputtitle =(event)=>{
-    settitle(event.target.value)
+const [amount,setamount] =useState('')
+const inputtitle =(event)=>{
+settitle(event.target.value)
 
-   }
-   const inputamount=(event)=>{
-    setamount(event.target.value)
-   }
-   const sevedata=(event)=>{
-    event.preventDefault();
-   const itemData ={
-    title:title,amount:amount
-   }
-  console.log(itemData)
-  settitle('')
-  setamount('')
-  if((itemData.title===("warakorn") && itemData.amount===("valentile")) 
-  || (itemData.title===("warakorn1") && itemData.amount===("va"))
-  ||(itemData.title===("warakorn2") && itemData.amount===("wa")))
+}
+const inputamount=(event)=>{
+setamount(event.target.value)
+}
+const sevedata=(event)=>{
+event.preventDefault();
+const itemData ={
+title:title,amount:amount
+}
+console.log(itemData)
+settitle('')
+setamount('')
+if((itemData.title===("warakorn") && itemData.amount===("valentile"))
+|| (itemData.title===("warakorn1") && itemData.amount===("va"))
+||(itemData.title===("Admin") && itemData.amount===("admin!@#")))
 
-  {Replace()}
-  
-  
-  else{console.log("no")}
-    
-   }
-   function Replace(){ 
-    window.location.href="/index.html"
+{tabV2()}
+
+
+else{console.log("no")}
+
+}
+function tabV2(){ 
+  window.location.href="http://127.0.0.1:1880/ui/#!/0?socketid=ZD5qoW8phoHKUaheAAAc"
 } 
-   
     return(
         
         <div class="container" > 
